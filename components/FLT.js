@@ -1,9 +1,7 @@
-import styles from './FeedbackForm.module.css'
-
-export default function FeedbackForm() {
+export default function FLT() {
   return (
       <form
-        className={styles.form}
+        className=""
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         name="feedback"
@@ -11,21 +9,21 @@ export default function FeedbackForm() {
         action="/success"
       >
         <input type="hidden" name="form-name" value="feedback" />
-        <p className={styles.hidden}>
+        <p className="">
             <label>
             Don’t fill this out if you’re human: <input name="bot-field" />
             </label>
         </p>
   
         <label htmlFor="name">Name</label>
-        <input id="name" className={styles['form-field']} type="text" name="name" />
+        <input id="name" className="" type="text" name="name" />
 
         <label htmlFor="email">Email</label>
-        <input id="email" className={styles['form-field']} type="email" name="email" required />
+        <input id="email" className="" type="email" name="email" required />
 
         <label htmlFor="feedback">What is your feedback?</label>
-        <textarea id="feedback" className={styles['form-field']} wrap="soft" name="feedback" required></textarea>
-        <button className={styles.button} type="submit">Submit</button>
+        <textarea id="feedback" className="" wrap="soft" name="feedback" required></textarea>
+        <button className="" type="submit">Submit</button>
       </form>
   )
 }
